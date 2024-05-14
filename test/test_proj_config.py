@@ -4,7 +4,7 @@
 """Test the ProjConfig class."""
 import unittest
 from unittest.mock import patch
-import config as pcfg
+import py_proj_config.config as pcfg
 
 TEST_TOML = """
 [cfg1]

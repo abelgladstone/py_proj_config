@@ -4,16 +4,18 @@
 from setuptools import setup, find_packages
 import sys
 
-if sys.version_info >= (3, 11):
+if sys.version_info <= (3, 11):
     requires = ["tomllib"]
 else:
     requires = []
 
 setup(
     name="py_proj_config",
-    version="0.1",
-    requires=requires,
+    version="0.0.2",
+    author="Abel Gladstone Mangam",
+    install_requires=requires,
     packages=find_packages(),
+    include_package_data=True,
 )
 # run the following command to install the package:
 # python setup.py install

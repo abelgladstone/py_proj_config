@@ -3,7 +3,7 @@
 # This module is used to store the config data in a class and access it using the class attributes.
 import warnings
 import tomllib
-from singleton import SingleTon
+from py_proj_config.singleton import SingleTon
 
 
 class ProjConfigChangedWarning(UserWarning):
