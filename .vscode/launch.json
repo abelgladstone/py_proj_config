@@ -16,12 +16,16 @@
             "type": "debugpy",
             "module": "unittest",
             "request": "launch",
-            "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "args": [
-                "-v",
-                "test.${fileBasenameNoExtension}"
-            ]
+                "discover",
+                "-s",
+                "${workspaceFolder}/test",
+                "-p",
+                "test_*.py"
+            ],
+            "stopOnEntry": false,
+            "justMyCode": true
         }
     ]
 }
