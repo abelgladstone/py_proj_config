@@ -1,9 +1,9 @@
 """Setup file for the package."""
 
-from setuptools import setup, find_packages
 import sys
+from setuptools import setup, find_packages
 
-if sys.version_info <= (3, 11):
+if (sys.version_info.major == 3) and (6 <= sys.version_info.minor < 11):
     requires = ["tomllib"]
 else:
     requires = []
