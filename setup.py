@@ -1,5 +1,4 @@
-# add setup.py file to the project root directory
-# add the following code to setup.py:
+"""Setup file for the package."""
 
 from setuptools import setup, find_packages
 import sys
@@ -16,7 +15,5 @@ setup(
     install_requires=requires,
     packages=find_packages(),
     include_package_data=True,
+    python_requires=">=3.6",
 )
-# run the following command to install the package:
-# python setup.py install
-# Now you can import the package in your code like this:
